@@ -46,8 +46,6 @@ public class TweetReader extends LineNumberReader {
 			if (line.startsWith("@")) {
 				String[] parts = line.split("\t");
 				if (parts.length == 3) {
-					// update the last line number and return the tweet
-					new LineNumber().updateLine(getLineNumber());
 					return new Tweet(parts[0], parts[1]);
 				}
 			}

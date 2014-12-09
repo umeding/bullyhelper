@@ -41,11 +41,7 @@ public class LineNumber {
 			}
 		}
 
-		lineNumber++;
-
-		// save the new line number
-		updateLine(lineNumber);
-		return lineNumber;
+		return ++lineNumber;
 	}
 
 	/**
