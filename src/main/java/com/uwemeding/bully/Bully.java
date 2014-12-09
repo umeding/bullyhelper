@@ -53,6 +53,7 @@ public class Bully {
 
 				tweet.setBully(console.toLowerCase().startsWith("y"));
 				tw.println(tweet);
+				tw.flush();
 			}
 		} 
 
